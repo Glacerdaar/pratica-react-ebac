@@ -43,27 +43,27 @@ const renderizaResultado = () => {
 
     if (IMC <= 18.5) {
         return (
-            <p>{nome}, você está abaixo do peso</p>
+            <p>{nome}, seu IMC é {IMC.toFixed(2)} e você está abaixo do peso</p>
         )
     } else if (IMC >= 18.6 && IMC <= 24.9) {
         return (
-            <p>{nome}, você está no peso ideal</p>
+            <p>{nome}, seu IMC é {IMC.toFixed(2)} você está no peso ideal</p>
         )
     } else if (IMC >= 25 && IMC <= 29.9) {
         return (
-            <p>{nome}, você está levemente acima do peso</p>
+            <p>{nome}, seu IMC é {IMC.toFixed(2)} você está levemente acima do peso</p>
         )
     } else if (IMC >= 30 && IMC <= 34.9) {
         return (
-            <p>{nome}, você está no nível Obesidade I</p>
+            <p>{nome}, seu IMC é {IMC.toFixed(2)} você está no nível Obesidade I</p>
         )
     } else if (IMC >= 35 && IMC <= 39.9) {
         return (
-            <p>{nome}, você está com Obesidade grau II</p>
+            <p>{nome}, seu IMC é {IMC.toFixed(2)} você está com Obesidade grau II</p>
         )
     } else if (IMC >= 40){
         return (
-            <p>{nome}, você está no nível Obesidade III</p>
+            <p>{nome}, seu IMC é {IMC.toFixed(2)} você está no nível Obesidade III</p>
         )
     }
 }
